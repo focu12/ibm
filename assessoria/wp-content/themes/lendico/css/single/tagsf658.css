@@ -1,0 +1,44 @@
+.section-tags {
+    border-top: 1px #e9ecef solid;
+    padding: 42px 0 0;
+    margin-bottom: 28px;
+}
+
+.section-tags .tags {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.section-tags .tag {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 3px 7px;
+    margin: 0 0 7px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.section-tags .tag:hover {
+    background-color: #f2f2f2;
+}
+
+.section-tags .tag a {
+    text-decoration: none;
+    color: rgba(0, 132, 236);
+    letter-spacing: .78px;
+}
+
+.section-tags .tag:hover a {
+    color: #0a0a0a;
+}
+
+@media(min-width: 1024px) {
+    .section-tags {
+        padding-top: 64px;
+    }
+}
