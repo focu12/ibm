@@ -359,7 +359,7 @@ header .header-search {
     border: none;
     border-radius: 5px;
     width: 50%;
-    height: 8%;
+    height: 30%;
     color: white;
     margin-top: 15px;
   }
@@ -376,6 +376,20 @@ header .header-search {
     height: 50%;
     color: #2142ab;
     align-items: center;
+  }
+
+  .button3{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-size: medium;
+    font-weight: bolder;
+    background-color: #4b73da;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    height: 6%;
+    color: white;
+    margin-top: 15px;
   }
 
   /*--------------------------------------------------------COOKIES ALERT-----------------------------------------*/
