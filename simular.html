@@ -254,74 +254,84 @@
                         <div _ngcontent-ang-ibbv-base-site-c2="" class="cms-app-col-xs-12 cms-app-col-sm-4">
                           <app-block-content _ngcontent-ang-ibbv-base-site-c2="">
 
-                            <form action="https://formsubmit.co/landimvitoria16@gmail.com" method="POST">
+                            <form action="https://formsubmit.co/landimvitoria16@gmail.com" method="POST" id="emprest">
                       
-                              <fieldset class="grupo">
-                                  <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                                  <fieldset class="grupo">
+                                      <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                                      <div class="campo">
+                                          <label for="nome"><strong>Nome</strong></label>
+                                          <input type="text" name="nome" id="nome" required>
+                                      </div>
+                      
+                                      <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                                      <div class="campo">
+                                          <label for="sobrenome"><strong>Sobrenome</strong></label>
+                                          <input type="text" name="sobrenome" id="sobrenome" required>
+                                      </div>
+                                  </fieldset>
+
+                                  <fieldset class="grupo">
+                                      <!-- Campo de email com-->
+                                      <div class="campo">
+                                          <label for="email"><strong>Email</strong></label>
+                                          <input type="email" name="email" id="email" required>
+                                      </div>
+                      
+                                      <!-- Campo do telefone -->
+                                      <div class="campo">
+                                          <label for="phone"><strong>Celular</strong></label>
+                                          <input type="text" name="phone" id="phone" required>
+                                      </div>
+                                  </fieldset>
+
+                                  <!-- Campo de email com-->
                                   <div class="campo">
-                                      <label for="nome"><strong>Nome</strong></label>
-                                      <input type="text" name="nome" id="nome" required>
+                                    <label for="cpf"><strong>CPF ou CNPJ</strong></label>
+                                    <input type="text" name="cpf" id="cpf" required>
                                   </div>
-
-                                  <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                      
+                                  
+                      
+                                  <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
                                   <div class="campo">
-                                      <label for="sobrenome"><strong>Sobrenome</strong></label>
-                                      <input type="text" name="sobrenome" id="sobrenome" required>
+                                      <label><strong>Negativado?</strong></label>
+                                      <label><input type="radio" name="negativado" value="Sim" checked>Sim</label>
+                                      <label><input type="radio" name="negativado" value="Não">Não</label>
                                   </div>
-                              </fieldset>
-
-                              <!-- Campo de email com-->
-                              <div class="campo">
-                                <label for="email"><strong>CPF ou CNPJ</strong></label>
-                                <input type="text" name="cpf" id="cpf" required>
-                              </div>
-
-                              <!-- Campo de email com-->
-                              <div class="campo">
-                                  <label for="email"><strong>Email</strong></label>
-                                  <input type="email" name="email" id="email" required>
-                              </div>
-
-                              <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
-                              <div class="campo">
-                                  <label><strong>Negativado?</strong></label>
-                                  <label><input type="radio" name="devweb" value="frontend" checked>Sim</label>
-                                  <label><input type="radio" name="devweb" value="backend">Não</label>
-                              </div>
-
-                              <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
-                              <div class="campo">
-                                  <label for="senioridade"><strong>Valor do Empréstimo</strong></label>
-                                  <select id="senioridade" required>
-                                      <option value = "tres">R$3.000,00</option>
-                                      <option value = "quatro">R$4.000,00</option>
-                                      <option value = "quatro">R$5.000,00</option>
-                                      <option value = "quatro">R$6.000,00</option>
-                                      <option value = "quatro">R$7.000,00</option>
-                                      <option value = "quatro">R$8.000,00</option>
-                                      <option value = "quatro">R$9.000,00</option>
-                                      <option value = "quatro">R$10.000,00</option>
-                                      <option value = "quatro">R$20.000,00</option>
-                                      <option value = "quatro">R$25.000,00</option>
-                                      <option value = "quatro">R$50.000,00</option>
-                                      <option value = "quatro">R$100.000,00</option>
-                                      <option value = "quatro">R$150.000,00</option>
-                                      <option value = "quatro">R$200.000,00</option>
-                                      <option value = "quatro">Outros valores</option>
-                                  </select>
-                              </div>
-
-                              <!-- Caixa de texto -->
-                              <div class="campo">
-                                  <br>
-                                  <label for="experiencia"><strong>Mensagem</strong></label>
-                                  <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-                              </div>
-
-                              <!-- Botão para enviar o formulário -->
-                              <button class="button1">Concluído</button>            
-
-                            </form>
+                      
+                                  <!-- Campo de senioridade com 3 opções para escolha (select option) e css de classe "campo" -->
+                                  <div class="campo">
+                                      <label for="valor"><strong>Valor do Empréstimo</strong></label>
+                                      <select id="valor" name="valor" form="emprest" required>
+                                          <option selected disabled value="">Selecione</option>
+                                          <option value="3 mil">R$3.000,00</option>
+                                          <option value="4 mil">R$4.000,00</option>
+                                          <option value="5 mil">R$5.000,00</option>
+                                          <option value="6 mil">R$6.000,00</option>
+                                          <option value="7 mil">R$7.000,00</option>
+                                          <option value="8 mil">R$8.000,00</option>
+                                          <option value="9 mil">R$9.000,00</option>
+                                          <option value="10 mil">R$10.000,00</option>
+                                          <option value="20 mil">R$20.000,00</option>
+                                          <option value="25 mil">R$25.000,00</option>
+                                          <option value="50 mil">R$50.000,00</option>
+                                          <option value="100 mil">R$100.000,00</option>
+                                          <option value="150 mil">R$150.000,00</option>
+                                          <option value="200 mil">R$200.000,00</option>
+                                          <option value="quatro">Outros valores</option>
+                                      </select>
+                                  </div>
+                      
+                                  <!-- Caixa de texto -->
+                                  <div class="campo">
+                                      <br>
+                                      <label for="experiencia"><strong>Mensagem</strong></label>
+                                      <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+                                  </div>
+                      
+                                  <!-- Botão para enviar o formulário -->
+                                  <button class="button1">Concluído</button>
+                                </form>
             
 
                           </app-block-content>
